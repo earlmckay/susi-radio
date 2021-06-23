@@ -1,3 +1,4 @@
+
 ![](images/susi-radio_panorama_3d.jpg)
 
 # susi-radio
@@ -29,7 +30,7 @@ The SuSi radio is a very user-friendly internet radio with only two buttons. It 
  - 1 x Rotarry encoder KY-040
  - 1 x Resistor 10kΩ
 
-80% of the components can be purchased from reichelt.de (Preconfigured shopping cart: [Gusi Radio](https://www.reichelt.de/my/1832192 "Gusi Radio")). The screws and the GPIO edge are not included.
+80% of the components can be purchased from reichelt.de (Preconfigured shopping cart: [Susi Radio](https://www.reichelt.de/my/1832192 "Gusi Radio")). The screws and the GPIO edge are not included.
 
 The 3D data can be downloaded [here](https://www.thingiverse.com/thing:4823464 "Thingiverse").
 
@@ -48,7 +49,7 @@ After the installation, open the SD card (should be labeled as "boot") and copy 
 
 Open the *config.txt* with an editor. Add the following code at the bottom:
 ```
- ################## GUSI ################
+ ################## SUSI ################
 # Disable Bluetooth`
 dtoverlay=pi3-disable-bt
 # Power On/Off Button
@@ -222,6 +223,16 @@ Deactivate some unused modules:
 Reboot the device
 
 `sudo reboot`
+
+------------
+
+
+  **9) Customise station list**
+Open susi.py:
+
+`sudo nano /home/pi/susi-radio/susi.py`
+
+Change the URL in the variables "RS1", "RS2" and "RS3".
 
 ------------
 
